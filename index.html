@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+        }
+        :root {
+            --color-primary: #ffffff;
+            --color-secundary: #979BAF;
+            --color-bg: #E8EAF6;
+            --color-black: #4A4C5A;
+        }
+        .card_txt {
+            font-family: 'Titillium Web', sans-serif;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            background-color: var(--color-bg);
+            padding: 1em;
+
+        }
+        .card {
+            display: flex;
+            flex-basis: 20%;
+            flex-direction: column;
+            border: solid 0.2em var(--color-secundary);
+            background-color: var(--color-primary);
+            padding: 1em;
+        }
+        .card:nth-child(3), .card:nth-child(5) {
+            flex: 1 1 40%;
+        }
+        .card_img {
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img {
+            object-fit: cover;
+            height: 100%;
+        }
+        .card:nth-child(3) img, .card:nth-child(5) img {
+            object-position: center 0 0 3em 0;
+        }
+        .card_txt {
+            padding: 1em 0;
+            display: flex;
+            flex-direction: column;
+            justify-items: baseline;
+        }
+        .card_txt h1 {
+            font-size: 15px;
+            font-weight: 400;
+            flex-grow: 1;
+            color: var(--color-secundary);
+            letter-spacing: 0.1em;
+        }
+        .card_txt h2 {
+            font-weight: 400;
+            font-size: 11px; 
+            color: var(--color-secundary);
+            padding-top: 0%;
+        }
+        .card_txt h3 {
+            font-weight: 600;
+            font-size: 20px;
+            color: var(--color-black);
+            flex-grow: 1;
+            text-transform: uppercase;
+            line-height: 27px;
+            padding: 1em 0;
+        }
+        .card_txt p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/1.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>YASHIMA GAKUTEI </h1>
+                    <h2>(Japanese, 1786–1868)</h2>
+                    <h3>Three Great Wise Men of the Han Dynasty</h3>
+                    <p></p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/2.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>KUBO SHUNMAN </h1>
+                    <h2>(Japanese, 1757–1820)</h2>
+                    <h3>Old Fisherman Carrying a Basket of Salmon</h3>
+                    <p></p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/3.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>KUBO SHUNMAN</h1>
+                    <h2>(Japanese, 1757–1820)</h2>
+                    <h3>Various moths and butterflies</h3>
+                    <p></p>
+                </header>
+            </div><div class="card">
+                <figure class="card_img">
+                    <img src="img/4.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>EDGAR DEGAS </h1>
+                    <h2>(French, Paris 1834–1917 Paris)</h2>
+                    <h3>Landscape</h3>
+                    <p>Degas undertook a series of landscape monotypes during a visit in October 1890 to the Burgundian estate of his friend, the artist Pierre-Georges Jeanniot. Over the course of the next two years, he made about fifty monotypes, a group of which he exhibited at the Durand-Ruel gallery in 1892. Although the artist called these views "imaginary landscapes," the present work is thought to reflect his experience traveling through Burgundy in a horse-drawn carriage. 
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/5.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>KNAPP & COMPANY</h1>
+                    <h2>(American, New York)</h2>
+                    <h3>Pompano</h3>
+                    <p>Lithography from the series Fishers and Fish for Duke brand cigarettes.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/6.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>KATSUSHIKA HOKUSAI</h1>
+                    <h2>(Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo))</h2>
+                    <h3>Cushion Pine at Aoyama (Aoyama enza no matsu)</h3>
+                    <p>From the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei). Men picnic beside the famed cushion pine in the garden of Ryūganji Temple, while a father, passing along the garden's footpath with his son, motions to Fuji in the distance. The cushion pine's swelling form and green coloration create a formal dialogue with Fuji's elegant arched summit and mottled green side.</p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
